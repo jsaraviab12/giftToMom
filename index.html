@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M O M</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body class="body">
+ <div class="justify-content-center d-flex feliz" style="padding-top: 25px ;">
+     <p class="feliz">Feliz Dia</p>
+ </div>
+    <div class="d-flex justify-content-center align-items-center" style="width: 100%; height: 80vh;">
+        <div class="d-flex flex-column"  style="padding:55px;">   
+            <h1 id=Main>     Hola Mami   </h1> 
+            <div class="d-flex flex-column align-items-center" >
+                <button onclick="start()" class="btn btn-danger " style="width: 300px; ">Presiona</button> 
+            </div> 
+            
+        </div>
+                
+    </div>
+        
+   
+   
+    <script>   
+        function start(){ 
+        let mensajitos = new Array('Me guardo todo amor que tengo, para entregártelo  poquito a poquito todos los días que me  restan de vida. Te quiero Mamá Muchas Felicidades.',
+        'Para ti que siempre tuviste tus brazos abiertos y tu corazón lleno de amor hacia mí, te deseo toda la felicidad del mundo. Gracias y que pases un lindo día sabiendo que eres querida por todos.')
+            x = Math.round(Math.random()*(mensajitos.length-1));
+            texto = mensajitos[x]
+            document.getElementById("Main").innerHTML = texto;
+        }
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+
+</body>
+</html>
